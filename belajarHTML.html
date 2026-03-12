@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Latihan Tag HTML</title>
+</head>
+<head></head>
+<body>
+
+    <h1>Mahasiswa Stikom Banyuwangi Belajar Desain Web</h1>
+    <p>Belajar Desain Web itu menyenangkan!</p>
+    <h2><p>1. Formating Task</p></h2>
+
+    <p>Ini adalah sebuah paragraf teks yang menggunakan tag p. Di bawah ini adalah garis horizontal (hr):</p>
+    <hr />
+
+    <p>Baris pertama teks.<br>Ini baris kedua setelah menggunakan tag br (line break).</p>
+
+    <hr />
+
+    <h3>Contoh Formatting Teks:</h3>
+    <ul>
+        <li><b>Teks Tebal (bold)</b></li>
+        <li><strong>Teks Penting (strong)</strong></li>
+        <li><i>Teks Miring (italic)</i></li>
+        <li><em>Teks dengan Penekanan (em)</em></li>
+        <li><mark>Teks ter-highlight (mark)</mark></li>
+        <li><small>Teks berukuran lebih kecil (small)</small></li>
+        <li><del>Teks yang dihapus/dicoret (del)</del></li>
+        <li><ins>Teks yang disisipkan/garis bawah (ins)</ins></li>
+        <li>Rumus Kimia: H<sub>2</sub>O (subscript)</li>
+        <li>Rumus Matematika: x<sup>2</sup> (superscript)</li>
+    </ul>
+
+    <hr/>
+
+    <h3>Contoh Kode & Komputer:</h3>
+    <p>Gunakan perintah <code>print()</code> untuk mencetak teks.</p>
+    
+    <p>Tekan <kbd>Ctrl+C</kbd> untuk menyalin.</p>
+    
+    <p>Variabel dalam matematika: <var>x</var> = 10.</p>
+    
+    <p>Output sistem: <samp>Error 404 Not Found</samp></p>
+
+    <p>Teks Pre-formatted (mempertahankan spasi dan baris baru):</p>
+    <pre>
+        Baris ini
+        menjaga spasi
+        sesuai ketikan.
+    </pre>
+</head>
+</body>
+
+<head>
+<body>
+    <h2><p>2. List Task</p></h2>
+    <h3>2.1 Unordered List (&lt;ul&gt;)</h3>
+    <p>Menggunakan bullet points:</p>
+    <ul>
+        <li>Kopi</li>
+        <li>Teh</li>
+        <li>Susu</li>
+    </ul>
+
+    <hr />
+
+    <h3>2.2 Ordered List (&lt;ol&gt;)</h3>
+    <p>Menggunakan penomoran otomatis:</p>
+    <ol>
+        <li>Buka Browser</li>
+        <li>Ketik alamat website</li>
+        <li>Tekan Enter</li>
+    </ol>
+
+    <hr />
+
+    <h3>2.3 Definition List (&lt;dl&gt;)</h3>
+    <p>Digunakan untuk istilah dan penjelasannya:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language (Bahasa standar untuk membuat halaman web).</dd>
+        
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets (Digunakan untuk mengatur tampilan/desain).</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>Bahasa pemrograman untuk membuat web menjadi interaktif.</dd>
+    </dl>
+
+</head>
+</body>
+
+<head>
+<body>
+    <h2><p>3. Link dan Navigasi</p></h2>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+        
+        <nav>
+            <a href="index.html">Beranda</a> | 
+            <a href="profil.html">Profil</a> | 
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <main>
+        <h3>Contoh Penggunaan Hyperlink (&lt;a&gt;)</h3>
+        
+        <p>Kunjungi <a href="https://www.google.com" target="_blank">Google</a> untuk mencari informasi.</p>
+        
+        <p>Ingin kembali ke atas? Klik <a href="#">di sini</a>.</p>
+    </main>
+
+    <h2><p>4. Tabel</p></h2>
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption>Daftar Nilai Siswa</caption>
+
+        <colgroup>
+            <col span="1" style="background-color: #f2f2f2;">
+            <col span="2">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>No</th> <th>Nama</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td> <td>Budi</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Siti</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Rata-rata</td>
+                <td>87.5</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2><p>5. Form</p></h2>
+    <form action="/submit_data" method="POST">
+        
+        <fieldset>
+            <legend>Informasi Profil</legend>
+
+            <p>
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama...">
+            </p>
+
+            <p>
+                <label for="pass">Password:</label><br>
+                <input type="password" id="pass" name="pass">
+            </p>
+
+            <p>
+                <label for="kota">Domisili:</label><br>
+                <select id="kota" name="kota">
+                    <optgroup label="Jawa">
+                        <option value="jkt">Jakarta</option>
+                        <option value="sby">Surabaya</option>
+                    </optgroup>
+                    <optgroup label="Sumatera">
+                        <option value="mdn">Medan</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="browser">Browser Favorit:</label><br>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Edge">
+                </datalist>
+            </p>
+
+            <p>
+                <label for="pesan">Biografi Singkat:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" cols="30"></textarea>
+            </p>
+
+            <p>
+                Skor Keamanan Password: <output name="hasil">Lemah</output>
+            </p>
+
+            <button type="submit">Kirim Data</button>
+            <button type="reset">Hapus Form</button>
+
+        </fieldset>
+    </form>
+
+    <h2><p>6. Media</p></h2>
+    <h3>6.1 Konten Gambar</h3>
+    
+    <figure>
+        <img src="logo.png" alt="Logo Stikom" width="300">
+        <figcaption>Gambar 1: Logo Stikom PGRI Banyuwangi.</figcaption>
+    </figure>
+
+    <hr>
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="gambar-besar.jpg">
+        <img src="unnamed.webp" alt="Lokasi Stikom" width="400">
+    </picture>
+
+    <hr>
+
+    <h3>Image Map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.8150191361415!2d114.36511607484908!3d-8.22134969181119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14532ca02e0f1%3A0x487748494ecef50b!2sSekolah%20Tinggi%20Ilmu%20Komputer%20PGRI%20Banyuwangi!5e0!3m2!1sid!2sid!4v1773305092744!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <hr>
+
+    <h3>6.2 Multimedia</h3>
+
+    <p>Contoh Video:</p>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        <track src="video.vtt" kind="subtitles" srclang="id" label="Indonesia">
+        Browser kamu tidak mendukung tag video.
+    </video>
+
+    <p>Contoh Audio:</p>
+    <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung tag audio.
+    </audio>
+
+    <h2><p>7. Meta Dan Head</p></h2>
+    <details>
+        <summary>Klik untuk melihat detail</summary>
+        <p>Ini adalah widget yang dapat dibuka-tutup. Sangat berguna untuk FAQ!</p>
+    </details>
+
+    <p>Progress Tugas: <progress value="70" max="100">70%</progress></p>
+    <p>Penyimpanan Data: <meter value="6" min="0" max="10">6 dari 10</meter></p>
+
+    <dialog open>
+        Ini adalah dialog box/modal.
+        <form method="dialog"><button>Tutup</button></form>
+    </dialog>
+
+    <hr>
+
+    <h3>7.2 Data dan Kutipan</h3>
+    
+    <blockquote>
+        "Ilmu adalah cahaya bagi kehidupan manusia."
+        <cite>- Kutipan Anonim</cite>
+    </blockquote>
+
+    <p>Kata kunci penting adalah <q>fokus</q>.</p>
+    
+    <p>Saya belajar <abbr title="HyperText Markup Language">HTML</abbr> hari ini.</p>
+
+    <address>
+        Ditulis oleh: Mhdmltfii<br>
+        Web: google.com<br>
+        Banyuwangi, Indonesia
+    </address>
+
+    <p>Diposting pada: <time datetime="2026-03-12">12 Maret 2026</time></p>
+    <p>ID Produk: <data value="101">Produk Kamera</data></p>
+
+    <hr>
+
+    <h3>7.3 Teks Khusus</h3>
+
+    <p><bdo dir="rtl">Teks ini akan dibaca dari kanan ke kiri.</bdo></p>
+
+    <p>
+        <ruby>
+            漢 <rp>(</rp><rt>Hàn</rt><rp>)</rp>
+            字 <rp>(</rp><rt>zì</rt><rp>)</rp>
+        </ruby>
+    </p>
+
+    <p>IniAdalahContohKataYangSangat<wbr>PanjangSekaliAgarTidakRusakTampilan.</p>
+</body>
+</html>
