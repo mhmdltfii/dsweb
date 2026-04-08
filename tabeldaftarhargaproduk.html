@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Tabel Daftar Harga Produk</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            caption {
+                font-weight: bold;
+                font-size: 25px;
+            }
+            th,
+            td {
+                border: 1px solid black;
+                padding: 10px;
+                text-align: center;
+            }
+            th {
+            background-color: orangered;
+            color: white;
+            text-align: center;
+        }
+
+        .kategori {
+            vertical-align: middle;
+        }
+
+        .paketlaptopsempurna {
+            background-color: #e6d8b5;
+            font-weight: bold;
+        }
+        .paketlaptopmantap {
+            background-color: #ffa785;
+            font-weight: bold;
+        }
+        .pakethptop {
+            background-color: #88f4b8;
+            font-weight: bold;
+        }
+        .pakettabletpintar {
+            background-color: #689ee0;
+            font-weight: bold;
+        }
+        </style>
+    </head>
+    <body>
+        <table>
+            <h1 style="text-align: center;">Daftar Harga Produk</h1>
+        <tr>
+            <th>Kategori</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+        </tr>
+        <tr>
+            <td class="kategori" rowspan="3">Elektronik</td>
+            <td>Smartphone XYZ</td>
+            <td>Rp 3.000.000</td>
+        </tr>
+        <tr>
+            <td>Laptop ABC</td>
+            <td>Rp 7.500.000</td>
+        </tr>
+        <tr>
+            <td>Tablet Puma</td>
+            <td>Rp 4.299.000</td>
+        </tr>
+        <tr>
+            <td class="kategori" rowspan="3">Aksesoris</td>
+            <td>Mouse</td>
+            <td>Rp 200.000</td>
+        </tr>
+        <tr>
+            <td>Keyboard</td>
+            <td>Rp 350.000</td>
+        </tr>
+        <tr>
+            <td>Earbuds</td>
+            <td>Rp 150.000</td>
+        </tr>
+        <tr>
+            <td class="paketlaptopsempurna" colspan="2">Paket Laptop Sempurna (Laptop + Mouse + Keyboard)</td>
+            <td class="paketlaptopsempurna">Rp 8.050.000</td>
+        </tr>
+        <tr>
+            <td class="paketlaptopmantap" colspan="2">Paket Laptop Mantap (Laptop + Mouse)</td>
+            <td class="paketlaptopmantap">Rp 7.700.000</td>
+        </tr>
+        <tr>
+            <td class="pakethptop" colspan="2">Paket HP Top (Smartphone + Earbuds)</td>
+            <td class="pakethptop">Rp 3.150.000</td>
+        </tr>
+        <tr>
+            <td class="pakettabletpintar" colspan="2">Paket Tablet Pintar (Tablet + Keyboard)</td>
+            <td class="pakettabletpintar">Rp 4.649.000</td>
+        </table>
+    </body>
+</html>
