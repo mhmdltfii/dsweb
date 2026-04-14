@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Siswa</title>
+    <style>
+        /* CSS hanya untuk tata letak agar mirip dengan gambar */
+        body { max-width: 600px; margin: 20px auto; line-height: 1.5; }
+        fieldset { border: 1px solid #ccc; margin-bottom: 15px; padding: 15px; }
+        legend { font-weight: bold; }
+        div { margin-bottom: 10px; }
+        label { display: block; font-weight: bold; }
+        .inline-label { display: inline; font-weight: normal; }
+        textarea { width: 100%; height: 80px; }
+        select, input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+            width: 100%; padding: 5px; box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Form Pendaftaran Siswa</h1>
+    </header>
+
+    <main>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <fieldset>
+                <legend>Data Pribadi</legend>
+                
+                <div>
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh@email.com">
+                </div>
+
+                <div>
+                    <label for="hp">Nomor HP:</label>
+                    <input type="tel" id="hp" name="hp" placeholder="08xxxxxxxxxx">
+                </div>
+
+                <div>
+                    <label for="tgl_lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tgl_lahir" name="tgl_lahir">
+                </div>
+
+                <div>
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" id="pria" name="gender" value="Pria">
+                    <label for="pria" class="inline-label">Pria</label>
+                    
+                    <input type="radio" id="wanita" name="gender" value="Wanita">
+                    <label for="wanita" class="inline-label">Wanita</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Data Akademik</legend>
+
+                <div>
+                    <label for="prodi">Program Studi:</label>
+                    <select id="prodi" name="prodi">
+                        <option value="" disabled selected>-- Pilih Jurusan --</option>
+                        <option value="S1 TI">S1 Teknik Informatika</option>
+                        <option value="D3 MI">D3 Manajemen Informatika</option>
+                        <option value="S1 DKV">S1 Desain Komunikasi Visual</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Asal Sekolah:</label>
+                    <input type="checkbox" id="sma" name="asal" value="SMA">
+                    <label for="sma" class="inline-label">SMA</label>
+                    
+                    <input type="checkbox" id="smk" name="asal" value="SMK">
+                    <label for="smk" class="inline-label">SMK</label>
+
+                    <input type="checkbox" id="ma" name="asal" value="MA">
+                    <label for="ma" class="inline-label">MA</label>
+                </div>
+
+                <div>
+                    <label for="foto">Upload Foto:</label>
+                    <input type="file" id="foto" name="foto">
+                </div>
+
+                <div>
+                    <label for="catatan">Catatan Tambahan:</label>
+                    <textarea id="catatan" name="catatan" placeholder="Tulis catatan tambahan..."></textarea>
+                </div>
+            </fieldset>
+
+            <footer>
+                <button type="submit">Daftar Sekarang</button>
+                <button type="reset">Reset Form</button>
+            </footer>
+
+        </form>
+    </main>
+
+</body>
+</html>
