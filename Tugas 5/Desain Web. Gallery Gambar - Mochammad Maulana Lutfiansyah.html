@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Gambar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .gallery a {
+            width: 25%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .gallery img {
+            width: 100%;
+            border: 2px solid #333;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            border-color: #007BFF;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .gallery a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Gallery Gambar</h2>
+
+    <section class="gallery">
+        <a href="/Tugas 1/Desain Web. Belajar HTML - Mochammad Maulana Lutfiansyah.html">
+            <img src="Pemandangan Alam 1.jpg" alt="Gambar 1">
+        </a>
+
+        <a href="/Tugas 2/Desain Web. HTML Semantik - Mochammad Maulana Lutfiansyah.html">
+            <img src="Pemandangan Alam 2.avif" alt="Gambar 2">
+        </a>
+
+        <a href="/Tugas 3/Desain Web. Tabel Harga Produk. Mochammad Maulana Lutfiansyah.html">
+            <img src="https://images.unsplash.com/photo-1706437940550-57ad678c3ef5?fm=jpg&q=60&w=3000&auto=format&fit=crop" alt="Gambar 3">
+        </a>
+
+        <a href="/Tugas 4/Desain Web. Formulir Pendaftaran HTML - Mochammad Maulana Lutfiansyah.html">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/147/617/desktop-wallpaper-pemandangan-nordic-pemandangan.jpg" alt="Gambar 4">
+        </a>
+    </section>
+
+</body>
+</html>

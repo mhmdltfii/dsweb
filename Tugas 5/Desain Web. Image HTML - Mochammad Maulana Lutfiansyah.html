@@ -3,14 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Belajar Image URL</title>
 </head>
 <body>
-    <p style="background-image: url('logo.png');">
-        Selamat Pagi Dunia! Selamat Belajar HTML!<br>
-        Selamat Belajar CSS!<br>
-        Selamat Belajar JavaScript!<br>
-        Selamat Kawin!<br>
-        </p>
+    <h1>Belajar Image URL</h1>
+    <h2>Bab 5 (Gambar Sebagai Latar Belakang)</h2>
+    <hr>
+    <h3>- Background Image Pada Elemen</h3>
+    <a href="/Tugas 5/Image HTML/Background Image Elemen.html">Klik di sini</a>
+    <hr>
+    <h3>- Background Image Body</h3>
+    <a href="/Tugas 5/Image HTML/Background Image Body.html">Klik di sini</a>
+    <hr>
+    <h3>- Background Repeat</h3>
+    <a href="/Tugas 5/Image HTML/Background Repeat.html">Klik di sini</a>
+    <br>
+    <h2>Bab 6 (ELEMEN picture UNTUK GAMBAR RESPONSIF)</h2>
+    <hr>
+    <h3>- Elemen Picture Responsif</h3>
+    <a href="/Tugas 5/Image HTML/Elemen Picture.html">Klik di sini</a>
+    <hr>
+    <h3>- Atribut srcset dengan Descriptor</h3>
+    <a href="/Tugas 5/Image HTML/Atribut srcset dengan Descriptor.html">Klik di sini</a>
+    <br>
+    <h2>Bab 7 (GIF dan Animasi Gambar Sebagai Tautan)</h2>
+    <hr>
+    <h3>- GIF Animasi</h3>
+    <img src="gif_01.gif" alt="GIF Animasi">
+    <hr>
+    <h3>- Gambar Sebagai Tautan</h3>
+    <a href="https://www.google.com">
+        <img src="/Tugas 1/Logo Stikom.png" alt="Kunjungi situs kami">
+    </a>
+    <hr>
+    <h3>- Gambar Sebagai Tautan ke Halaman Lain</h3>
+    <a href="/Tugas 3/Desain Web. Tabel Daftar Pelajaran - Mochammad Maulana Lutfiansyah.html" target="_blank">
+        <img src="Pemandangan Alam 1.jpg" alt="Lihat halaman" width="100">
+    </a>
+    <hr>
+    <h3>- Gambar Sebagai Tautan ke Bagian Lain Halaman</h3>
+    <form action="/Tugas 4/Desain Web. Formulir Pendaftaran HTML - Mochammad Maulana Lutfiansyah.html" method="get">
+        <input type="text" name="q" placeholder="Cari...">
+        <a href="javascript:void(0)" onclick="this.closest('form').submit()">
+        <img src="ikon-cari.png" alt="Cari">
+        </a>
+    </form>
+    <hr>
+    <h3>- Gambar Mengambang</h3>
+    <img src="Pemandangan Alam 2.avif" alt="Foto"
+    style="float:left; margin-right:15px; margin-bottom:10px;">
+    <p>Ini teks yang akan mengalir di sebelah kanan gambar. Teks ini
+    akan terus mengisi ruang yang tersisa di sebelah gambar.</p>
+    <img src="Pemandangan Alam 1.jpg" alt="Foto"
+    style="float:right; margin-left:15px;">
+    <p>Ini teks yang akan mengalir di sebelah kiri gambar.</p>
+    <hr>
+    <h3>- Menyisipkan Gambar di Tengah</h3>
+    <h4>Menggunakan text-align pada elemen blok</h4>
+    <div style="text-align: center;">
+        <img src="/Tugas 1/Logo Stikom.png" alt="Foto Tengah">
+    </div>
+    <hr>
+    <h4>Menggunakan flexbox</h4>
+    <div style="display:flex; justify-content:center;">
+        <img src="/Tugas 1/Logo Stikom.png" alt="Foto Tengah">
+    </div>
+    <hr>
+    <h4>Menggunakan margin auto</h4>
+    <img src="/Tugas 1/Logo Stikom.png" alt="Foto Tengah"
+    style="display:block; margin:0 auto;">
 </body>
 </html>
